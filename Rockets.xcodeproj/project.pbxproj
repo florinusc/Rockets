@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		9F81772B25E11F7F00C983E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F81772A25E11F7F00C983E2 /* AppDelegate.swift */; };
 		9F81772D25E11F7F00C983E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F81772C25E11F7F00C983E2 /* SceneDelegate.swift */; };
-		9F81772F25E11F7F00C983E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F81772E25E11F7F00C983E2 /* ViewController.swift */; };
 		9F81773225E11F7F00C983E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F81773025E11F7F00C983E2 /* Main.storyboard */; };
 		9F81773525E11F7F00C983E2 /* Rockets.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F81773325E11F7F00C983E2 /* Rockets.xcdatamodeld */; };
 		9F81773725E11F8200C983E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F81773625E11F8200C983E2 /* Assets.xcassets */; };
 		9F81773A25E11F8200C983E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F81773825E11F8200C983E2 /* LaunchScreen.storyboard */; };
 		9F81774525E11F8200C983E2 /* RocketsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F81774425E11F8200C983E2 /* RocketsTests.swift */; };
 		9F81775025E11F8200C983E2 /* RocketsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F81774F25E11F8200C983E2 /* RocketsUITests.swift */; };
+		9F81776F25E1227C00C983E2 /* RocketListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F81776E25E1227C00C983E2 /* RocketListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 		9F81772725E11F7F00C983E2 /* Rockets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rockets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F81772A25E11F7F00C983E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F81772C25E11F7F00C983E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9F81772E25E11F7F00C983E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9F81773125E11F7F00C983E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F81773425E11F7F00C983E2 /* Rockets.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Rockets.xcdatamodel; sourceTree = "<group>"; };
 		9F81773625E11F8200C983E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		9F81774B25E11F8200C983E2 /* RocketsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RocketsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F81774F25E11F8200C983E2 /* RocketsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsUITests.swift; sourceTree = "<group>"; };
 		9F81775125E11F8200C983E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F81776E25E1227C00C983E2 /* RocketListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +101,9 @@
 		9F81772925E11F7F00C983E2 /* Rockets */ = {
 			isa = PBXGroup;
 			children = (
-				9F81772A25E11F7F00C983E2 /* AppDelegate.swift */,
-				9F81772C25E11F7F00C983E2 /* SceneDelegate.swift */,
-				9F81772E25E11F7F00C983E2 /* ViewController.swift */,
-				9F81773025E11F7F00C983E2 /* Main.storyboard */,
-				9F81773625E11F8200C983E2 /* Assets.xcassets */,
-				9F81773825E11F8200C983E2 /* LaunchScreen.storyboard */,
-				9F81773B25E11F8200C983E2 /* Info.plist */,
-				9F81773325E11F7F00C983E2 /* Rockets.xcdatamodeld */,
+				9F81776825E1215400C983E2 /* App Files */,
+				9F81776725E1214900C983E2 /* Views */,
+				9F81776625E1213E00C983E2 /* Models */,
 			);
 			path = Rockets;
 			sourceTree = "<group>";
@@ -129,6 +124,51 @@
 				9F81775125E11F8200C983E2 /* Info.plist */,
 			);
 			path = RocketsUITests;
+			sourceTree = "<group>";
+		};
+		9F81776625E1213E00C983E2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9F81773325E11F7F00C983E2 /* Rockets.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9F81776725E1214900C983E2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9F81776A25E1218700C983E2 /* Storyboards */,
+				9F81776925E1217300C983E2 /* Resources */,
+				9F81776E25E1227C00C983E2 /* RocketListViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9F81776825E1215400C983E2 /* App Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F81772A25E11F7F00C983E2 /* AppDelegate.swift */,
+				9F81772C25E11F7F00C983E2 /* SceneDelegate.swift */,
+				9F81773B25E11F8200C983E2 /* Info.plist */,
+			);
+			path = "App Files";
+			sourceTree = "<group>";
+		};
+		9F81776925E1217300C983E2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9F81773625E11F8200C983E2 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9F81776A25E1218700C983E2 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9F81773025E11F7F00C983E2 /* Main.storyboard */,
+				9F81773825E11F8200C983E2 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F81772F25E11F7F00C983E2 /* ViewController.swift in Sources */,
+				9F81776F25E1227C00C983E2 /* RocketListViewController.swift in Sources */,
 				9F81772B25E11F7F00C983E2 /* AppDelegate.swift in Sources */,
 				9F81772D25E11F7F00C983E2 /* SceneDelegate.swift in Sources */,
 				9F81773525E11F7F00C983E2 /* Rockets.xcdatamodeld in Sources */,
@@ -442,7 +482,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8CEQW7LX82;
-				INFOPLIST_FILE = Rockets/Info.plist;
+				INFOPLIST_FILE = "Rockets/App Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,7 +502,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8CEQW7LX82;
-				INFOPLIST_FILE = Rockets/Info.plist;
+				INFOPLIST_FILE = "Rockets/App Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
