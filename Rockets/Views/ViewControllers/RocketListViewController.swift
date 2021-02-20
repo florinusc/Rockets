@@ -11,7 +11,7 @@ class RocketListViewController: UIViewController {
     
     @IBOutlet private weak var tableView: UITableView!
     
-    private let viewModel = RocketListViewModel(repository: MockRepository())
+    private let viewModel = RocketListViewModel(repository: OnlineRepository())
 
     override func viewDidLoad() {
         super.viewDidLoad()

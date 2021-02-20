@@ -10,7 +10,7 @@ import Foundation
 class RocketCellViewModel {
     let name: String
     let date: String
-    let imageUrl: String
+    let imageUrl: String?
     let successRateString: String
     let successRateLevel: SuccessRateLevel
     
