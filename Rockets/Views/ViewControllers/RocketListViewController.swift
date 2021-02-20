@@ -32,7 +32,10 @@ class RocketListViewController: UIViewController {
     }
     
     private func getData() {
+        let loadingViewController = LoadingViewController()
+        add(loadingViewController)
         viewModel.getData({ [weak self] (error) in
+            loadingViewController.remove()
             if let error = error {
                 self?.presentAlert(for: error)
                 return
