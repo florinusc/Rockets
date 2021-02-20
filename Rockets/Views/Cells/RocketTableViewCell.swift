@@ -17,8 +17,14 @@ class RocketTableViewCell: UITableViewCell {
     func setup(with viewModel: RocketCellViewModel) {
         nameLabel.text = viewModel.name
         dateLabel.text = viewModel.date
-        successRateLabel.text = viewModel.successRate
+        successRateLabel.text = viewModel.successRateString
         rocketImageView.setImage(from: viewModel.imageUrl)
+        
+        switch viewModel.successRateLevel {
+        case .high: successRateLabel.backgroundColor = .systemGreen
+        case .mid: successRateLabel.backgroundColor = .systemOrange
+        case .low: successRateLabel.backgroundColor = .systemRed
+        }
     }
     
 }

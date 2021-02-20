@@ -11,12 +11,14 @@ class RocketCellViewModel {
     let name: String
     let date: String
     let imageUrl: String
-    let successRate: String
+    let successRateString: String
+    let successRateLevel: SuccessRateLevel
     
     init(with rocket: Rocket) {
         name = rocket.name
         date = rocket.dateOfFirstFlight.formattedDate() ?? ""
         imageUrl = rocket.imageUrl
-        successRate = "\(rocket.successRate)%"
+        successRateString = "\(rocket.successRate)%"
+        successRateLevel = SuccessRateLevel.level(rate: rocket.successRate)
     }
 }
