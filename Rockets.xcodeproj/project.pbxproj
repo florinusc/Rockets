@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F6F5EF825E18977008D677E /* RocketDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6F5EF725E18977008D677E /* RocketDetailViewModel.swift */; };
 		9F81772B25E11F7F00C983E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F81772A25E11F7F00C983E2 /* AppDelegate.swift */; };
 		9F81772D25E11F7F00C983E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F81772C25E11F7F00C983E2 /* SceneDelegate.swift */; };
 		9F81773225E11F7F00C983E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F81773025E11F7F00C983E2 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 		9FCC8ED625E15FBE00157146 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCC8ED525E15FBE00157146 /* Request.swift */; };
 		9FCC8EDB25E1615300157146 /* OnlineRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCC8EDA25E1615300157146 /* OnlineRepository.swift */; };
 		9FCC8EE125E1619B00157146 /* RocketResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCC8EE025E1619B00157146 /* RocketResource.swift */; };
+		9FCC8EE925E1832E00157146 /* RocketDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCC8EE825E1832E00157146 /* RocketDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F6F5EF725E18977008D677E /* RocketDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetailViewModel.swift; sourceTree = "<group>"; };
 		9F81772725E11F7F00C983E2 /* Rockets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rockets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F81772A25E11F7F00C983E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F81772C25E11F7F00C983E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +92,7 @@
 		9FCC8ED525E15FBE00157146 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		9FCC8EDA25E1615300157146 /* OnlineRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineRepository.swift; sourceTree = "<group>"; };
 		9FCC8EE025E1619B00157146 /* RocketResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketResource.swift; sourceTree = "<group>"; };
+		9FCC8EE825E1832E00157146 /* RocketDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +186,7 @@
 		9F81776725E1214900C983E2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9FCC8EED25E1833900157146 /* SwiftUI */,
 				9F81777425E1234000C983E2 /* Cells */,
 				9F81777325E1233600C983E2 /* ViewControllers */,
 				9F81776A25E1218700C983E2 /* Storyboards */,
@@ -299,6 +304,15 @@
 				9FCC8EE025E1619B00157146 /* RocketResource.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		9FCC8EED25E1833900157146 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				9FCC8EE825E1832E00157146 /* RocketDetailView.swift */,
+				9F6F5EF725E18977008D677E /* RocketDetailViewModel.swift */,
+			);
+			path = SwiftUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -446,7 +460,9 @@
 				9FCC8ECB25E15E7200157146 /* LoadingViewController.swift in Sources */,
 				9F81777D25E124A900C983E2 /* RocketCellViewModel.swift in Sources */,
 				9FCC8EE125E1619B00157146 /* RocketResource.swift in Sources */,
+				9F6F5EF825E18977008D677E /* RocketDetailViewModel.swift in Sources */,
 				9F81776F25E1227C00C983E2 /* RocketListViewController.swift in Sources */,
+				9FCC8EE925E1832E00157146 /* RocketDetailView.swift in Sources */,
 				9F91BC2125E133100024D128 /* UIViewController+Extension.swift in Sources */,
 				9F81779025E12C1400C983E2 /* UIImageView+Extension.swift in Sources */,
 				9F81772B25E11F7F00C983E2 /* AppDelegate.swift in Sources */,

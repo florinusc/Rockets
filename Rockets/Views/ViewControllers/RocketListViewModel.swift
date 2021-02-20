@@ -36,4 +36,9 @@ class RocketListViewModel {
         return RocketCellViewModel(with: rockets[index])
     }
     
+    func rocketDetailViewModel(at index: Int) -> RocketDetailViewModel? {
+        guard index >= 0, index < numberOfRockets else { return nil }
+        return RocketDetailViewModel(rocket: rockets[index])
+    }
+    
 }

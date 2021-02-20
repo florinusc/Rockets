@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class RocketListViewController: UIViewController {
     
@@ -44,6 +45,11 @@ class RocketListViewController: UIViewController {
         })
     }
     
+    private func navigateToDetailView(from index: Int) {
+        guard let rocketDetailViewModel = viewModel.rocketDetailViewModel(at: index) else { return }
+        let rocketDetailController = UIHostingController(rootView: RocketDetailView(viewModel: rocketDetailViewModel))
+        navigationController?.pushViewController(rocketDetailController, animated: true)
+    }
 }
 
 extension RocketListViewController: UITableViewDelegate, UITableViewDataSource {
@@ -61,5 +67,6 @@ extension RocketListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        navigateToDetailView(from: indexPath.row)
     }
 }
