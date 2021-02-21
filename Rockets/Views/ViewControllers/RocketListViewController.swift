@@ -8,7 +8,7 @@
 import UIKit
 import SwiftUI
 
-class RocketListViewController: UIViewController {
+final class RocketListViewController: UIViewController {
     
     @IBOutlet private weak var tableView: UITableView!
     
@@ -20,9 +20,15 @@ class RocketListViewController: UIViewController {
     }
     
     private func setup() {
-        title = "Rockets"
+        setupNavBar()
         setupTableView()
         getData()
+    }
+    
+    private func setupNavBar() {
+        title = "Rockets"
+        let backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        navigationItem.backBarButtonItem = backBarButtonItem
     }
     
     private func setupTableView() {

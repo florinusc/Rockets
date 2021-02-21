@@ -7,7 +7,7 @@
 
 import Foundation
 
-class RocketListViewModel {
+final class RocketListViewModel {
     
     let repository: Repository
     

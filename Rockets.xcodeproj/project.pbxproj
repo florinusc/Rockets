@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9F6F5EF825E18977008D677E /* RocketDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6F5EF725E18977008D677E /* RocketDetailViewModel.swift */; };
+		9F6F5F0A25E23E0F008D677E /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6F5F0925E23E0F008D677E /* RemoteImage.swift */; };
+		9F6F5F1225E27537008D677E /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6F5F1125E27537008D677E /* ImageLoader.swift */; };
 		9F81772B25E11F7F00C983E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F81772A25E11F7F00C983E2 /* AppDelegate.swift */; };
 		9F81772D25E11F7F00C983E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F81772C25E11F7F00C983E2 /* SceneDelegate.swift */; };
 		9F81773225E11F7F00C983E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F81773025E11F7F00C983E2 /* Main.storyboard */; };
@@ -21,7 +23,6 @@
 		9F81777825E1235900C983E2 /* RocketTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F81777625E1235900C983E2 /* RocketTableViewCell.xib */; };
 		9F81777D25E124A900C983E2 /* RocketCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F81777C25E124A900C983E2 /* RocketCellViewModel.swift */; };
 		9F81778325E12B2C00C983E2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9F81778225E12B2C00C983E2 /* Alamofire */; };
-		9F81778925E12B9000C983E2 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 9F81778825E12B9000C983E2 /* AlamofireImage */; };
 		9F81779025E12C1400C983E2 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F81778F25E12C1400C983E2 /* UIImageView+Extension.swift */; };
 		9F81779825E12C7A00C983E2 /* RocketListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F81779725E12C7A00C983E2 /* RocketListViewModel.swift */; };
 		9F81779E25E12D0100C983E2 /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F81779D25E12D0100C983E2 /* Rocket.swift */; };
@@ -59,6 +60,8 @@
 
 /* Begin PBXFileReference section */
 		9F6F5EF725E18977008D677E /* RocketDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetailViewModel.swift; sourceTree = "<group>"; };
+		9F6F5F0925E23E0F008D677E /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
+		9F6F5F1125E27537008D677E /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		9F81772725E11F7F00C983E2 /* Rockets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rockets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F81772A25E11F7F00C983E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F81772C25E11F7F00C983E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,7 +104,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F81778325E12B2C00C983E2 /* Alamofire in Frameworks */,
-				9F81778925E12B9000C983E2 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +247,7 @@
 		9F81778D25E12BFF00C983E2 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				9F6F5F1125E27537008D677E /* ImageLoader.swift */,
 				9F81778E25E12C0600C983E2 /* Extensions */,
 			);
 			path = Helpers;
@@ -311,6 +314,7 @@
 			children = (
 				9FCC8EE825E1832E00157146 /* RocketDetailView.swift */,
 				9F6F5EF725E18977008D677E /* RocketDetailViewModel.swift */,
+				9F6F5F0925E23E0F008D677E /* RemoteImage.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -333,7 +337,6 @@
 			name = Rockets;
 			packageProductDependencies = (
 				9F81778225E12B2C00C983E2 /* Alamofire */,
-				9F81778825E12B9000C983E2 /* AlamofireImage */,
 			);
 			productName = Rockets;
 			productReference = 9F81772725E11F7F00C983E2 /* Rockets.app */;
@@ -408,7 +411,6 @@
 			mainGroup = 9F81771E25E11F7F00C983E2;
 			packageReferences = (
 				9F81778125E12B2C00C983E2 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				9F81778725E12B9000C983E2 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
 			);
 			productRefGroup = 9F81772825E11F7F00C983E2 /* Products */;
 			projectDirPath = "";
@@ -457,6 +459,7 @@
 				9F81779E25E12D0100C983E2 /* Rocket.swift in Sources */,
 				9F8177B425E130C100C983E2 /* MockRepository.swift in Sources */,
 				9FCC8ED125E15FA200157146 /* SessionManager.swift in Sources */,
+				9F6F5F0A25E23E0F008D677E /* RemoteImage.swift in Sources */,
 				9FCC8ECB25E15E7200157146 /* LoadingViewController.swift in Sources */,
 				9F81777D25E124A900C983E2 /* RocketCellViewModel.swift in Sources */,
 				9FCC8EE125E1619B00157146 /* RocketResource.swift in Sources */,
@@ -470,6 +473,7 @@
 				9F81772D25E11F7F00C983E2 /* SceneDelegate.swift in Sources */,
 				9F8177AF25E12E7500C983E2 /* CustomError.swift in Sources */,
 				9FCC8ED625E15FBE00157146 /* Request.swift in Sources */,
+				9F6F5F1225E27537008D677E /* ImageLoader.swift in Sources */,
 				9F8177A725E12DCF00C983E2 /* Repository.swift in Sources */,
 				9F91BC1C25E1325E0024D128 /* UITableView+Extension.swift in Sources */,
 				9F81777725E1235900C983E2 /* RocketTableViewCell.swift in Sources */,
@@ -655,7 +659,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8CEQW7LX82;
 				INFOPLIST_FILE = "Rockets/App Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -675,7 +679,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8CEQW7LX82;
 				INFOPLIST_FILE = "Rockets/App Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -821,14 +825,6 @@
 				minimumVersion = 5.4.1;
 			};
 		};
-		9F81778725E12B9000C983E2 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.1.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -836,11 +832,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9F81778125E12B2C00C983E2 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
-		};
-		9F81778825E12B9000C983E2 /* AlamofireImage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 9F81778725E12B9000C983E2 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
-			productName = AlamofireImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 

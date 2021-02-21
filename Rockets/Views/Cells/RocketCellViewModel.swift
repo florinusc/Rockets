@@ -7,7 +7,7 @@
 
 import Foundation
 
-class RocketCellViewModel {
+final class RocketCellViewModel {
     let name: String
     let date: String
     let imageUrl: String?

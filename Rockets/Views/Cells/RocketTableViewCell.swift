@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RocketTableViewCell: UITableViewCell {
+final class RocketTableViewCell: UITableViewCell {
     
     @IBOutlet private weak var rocketImageView: UIImageView!
     @IBOutlet private weak var nameLabel: UILabel!
