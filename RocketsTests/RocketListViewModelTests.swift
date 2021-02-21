@@ -10,7 +10,7 @@ import XCTest
 
 class RocketListViewModelTests: XCTestCase {
     
-    func test_numberOfRocketsIsCorrect_is4() {
+    func test_numberOfRocketsIsCorrect() {
         let viewModel = makeSUT()
         getData(for: viewModel)
         XCTAssertEqual(viewModel.numberOfRockets, 4)
