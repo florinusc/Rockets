@@ -9,8 +9,7 @@ import Foundation
 
 final class RocketListViewModel {
     
-    let repository: Repository
-    
+    private let repository: Repository
     private var rockets = [Rocket]()
     
     var numberOfRockets: Int { rockets.count }

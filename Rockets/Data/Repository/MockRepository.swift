@@ -20,10 +20,13 @@ class MockRepository: Repository {
             handler(Result.failure(CustomError.general))
             return
         }
-        handler(Result.success([rocketFactory(), rocketFactory(), rocketFactory(), rocketFactory(), rocketFactory()]))
+        handler(Result.success(rocketFactory()))
     }
     
-    private func rocketFactory() -> Rocket {
+    func rocketFactory() -> [Rocket] {
+        
+        var rockets = [Rocket]()
+        
         let names = ["Falcon 1",
                      "Falcon 2",
                      "Falcon 3",
@@ -33,21 +36,24 @@ class MockRepository: Repository {
                          "https://imgur.com/DaCfMsj.jpg",
                          "https://imgur.com/azYafd8.jpg"]
         let successRates = [20, 40, 90, 61]
-        let actives = [false, true]
         let countries = ["USA", "UK", "France", "Germany"]
         let descriptions = ["Fast", "Slow", "Cool", "Red"]
         let datesOfFirstFlight = ["2006-03-24", "2010-12-01", "2009-10-04", "2016-05-14"]
         let costsPerLaunch = [12312, 500000, 900000, 190423]
         let wikipediaUrls = ["https://en.wikipedia.org/wiki/Falcon_1"]
         
-        return Rocket(name: names.randomElement() ?? "",
-                      imageUrl: imageUrls.randomElement() ?? "",
-                      successRate: successRates.randomElement() ?? 0,
-                      active: actives.randomElement() ?? false,
-                      country: countries.randomElement() ?? "",
-                      description: descriptions.randomElement() ?? "",
-                      dateOfFirstFlight: datesOfFirstFlight.randomElement() ?? "",
-                      costPerLaunch: costsPerLaunch.randomElement() ?? 0,
-                      wikipediaUrl: wikipediaUrls.randomElement() ?? "")
+        for index in names.indices {
+            rockets.append(Rocket(name: names[index],
+                                  imageUrl: imageUrls[index],
+                                  successRate: successRates[index],
+                                  active: true,
+                                  country: countries[index],
+                                  description: descriptions[index],
+                                  dateOfFirstFlight: datesOfFirstFlight[index],
+                                  costPerLaunch: costsPerLaunch[index],
+                                  wikipediaUrl: wikipediaUrls[0]))
+        }
+        
+        return rockets
     }
 }
