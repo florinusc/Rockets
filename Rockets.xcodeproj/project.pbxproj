@@ -10,6 +10,7 @@
 		9F2AC72525E2876D007651FE /* RocketListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2AC72425E2876D007651FE /* RocketListViewModelTests.swift */; };
 		9F2AC72D25E28C48007651FE /* RocketDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2AC72C25E28C48007651FE /* RocketDetailViewModelTests.swift */; };
 		9F2AC73225E2D095007651FE /* RocketCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2AC73125E2D095007651FE /* RocketCellViewModelTests.swift */; };
+		9F2AC73725E2D3D0007651FE /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2AC73625E2D3D0007651FE /* CoreDataManager.swift */; };
 		9F6F5EF825E18977008D677E /* RocketDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6F5EF725E18977008D677E /* RocketDetailViewModel.swift */; };
 		9F6F5F0A25E23E0F008D677E /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6F5F0925E23E0F008D677E /* RemoteImage.swift */; };
 		9F6F5F1225E27537008D677E /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6F5F1125E27537008D677E /* ImageLoader.swift */; };
@@ -64,6 +65,7 @@
 		9F2AC72425E2876D007651FE /* RocketListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketListViewModelTests.swift; sourceTree = "<group>"; };
 		9F2AC72C25E28C48007651FE /* RocketDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetailViewModelTests.swift; sourceTree = "<group>"; };
 		9F2AC73125E2D095007651FE /* RocketCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketCellViewModelTests.swift; sourceTree = "<group>"; };
+		9F2AC73625E2D3D0007651FE /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		9F6F5EF725E18977008D677E /* RocketDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetailViewModel.swift; sourceTree = "<group>"; };
 		9F6F5F0925E23E0F008D677E /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		9F6F5F1125E27537008D677E /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
@@ -283,6 +285,7 @@
 			children = (
 				9F8177B825E130EA00C983E2 /* Repository */,
 				9F8177AE25E12E7500C983E2 /* CustomError.swift */,
+				9F2AC73625E2D3D0007651FE /* CoreDataManager.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -482,6 +485,7 @@
 				9F6F5F1225E27537008D677E /* ImageLoader.swift in Sources */,
 				9F8177A725E12DCF00C983E2 /* Repository.swift in Sources */,
 				9F91BC1C25E1325E0024D128 /* UITableView+Extension.swift in Sources */,
+				9F2AC73725E2D3D0007651FE /* CoreDataManager.swift in Sources */,
 				9F81777725E1235900C983E2 /* RocketTableViewCell.swift in Sources */,
 				9FCC8EC125E1348400157146 /* String+Extension.swift in Sources */,
 				9FCC8EC625E1387D00157146 /* SuccessRateLevel.swift in Sources */,
